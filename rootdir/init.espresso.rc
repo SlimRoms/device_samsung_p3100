@@ -267,21 +267,18 @@ service pvrsrvctl /system/vendor/bin/pvrsrvctl_SGX540_120 --start --no-module
     group root
     oneshot
 
-# SMC Service
 service tf_daemon /system/bin/tf_daemon \
-    -d -c /system/bin/smc.ini
-    class main
-    user root
-    group root
-    oneshot
-    disabled
-
-service smc_pa /system/bin/smc_pa_ctrl \
-    -c /system/bin/smc.ini \
-    start /system/bin/smc_pa.ift
+    -d -c /vendor/etc/smc_normal_world_android_cfg.ini
     class core
-    user root
-    group root
+    user drmrpc
+    group drmrpc
+
+service smc_pa_wvdrm /system/bin/smc_pa_ctrl \
+    -c /vendor/etc/smc_normal_world_android_cfg.ini \
+    start /vendor/firmware/smc_pa_wvdrm.ift
+    class core
+    user drmrpc
+    group drmrpc
     oneshot
 
 service orientationd /system/bin/orientationd
