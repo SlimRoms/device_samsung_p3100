@@ -15,6 +15,11 @@
         "branch": "cm-10.1"
     },
     {
+        "repository": "SlimRoms/proprietary_vendor_samsung",
+        "target_path": "vendor/samsung",
+        "branch": "jb4.2"
+    },
+    {
         "repository": "SlimRoms/device_samsung_p3110",
         "target_path": "device/samsung/p3110",
         "branch": "jb4.2"
