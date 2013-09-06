@@ -86,7 +86,10 @@ PRODUCT_PACKAGES += \
     hwcomposer.piranha \
     lights.piranha \
     libinvensense_mpl \
-    power.piranha
+    power.piranha \
+    sensors.piranha \
+    geomagneticd \
+    orientationd
 
 # Storage
 PRODUCT_PROPERTY_OVERRIDES += \
