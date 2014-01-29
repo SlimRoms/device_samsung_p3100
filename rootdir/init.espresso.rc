@@ -95,7 +95,7 @@ on post-fs-data
     write /sys/devices/system/cpu/cpu0/cpufreq/screen_off_max_freq 800000
     chmod 0664 /sys/devices/system/cpu/cpu0/cpufreq/screen_off_max_freq
 
-#DVFS Lock
+# DVFS Lock
     chown radio system /sys/power/cpufreq_min_limit
     chown radio system /sys/power/cpufreq_max_limit
     chown radio system /sys/power/cpufreq_table
@@ -247,7 +247,7 @@ on post-fs-data
     mkdir /data/gps 771 system system
     chown system system /data/gps
 
-#Change permission for backlight and lcd
+# Change permission for backlight and lcd
     chown system system /sys/class/backlight/panel/brightness
     chown system radio /sys/class/lcd/panel/lcd_type
     chown system radio /sys/class/lcd/panel/lcd_power
@@ -405,9 +405,9 @@ service gpsd /system/bin/gpsd -c /system/etc/gps.xml
 
 # Keyboard
 service dock_kbd_attach /system/bin/dock_kbd_attach /dev/ttyO3
-	class main
-	user root
-	oneshot
+    class main
+    user root
+    oneshot
 
 # LPM
 on property:ro.bootmode=charger
@@ -420,7 +420,7 @@ on property:ro.bootmode=charger
     write /sys/class/android_usb/android0/functions adb
     write /sys/class/android_usb/android0/enable 1
     write /sys/class/android_usb/android0/iManufacturer samsung
-    write /sys/class/android_usb/android0/iProduct GT-I9100G
+    write /sys/class/android_usb/android0/iProduct $(ro.product.model)
     start adbd
 
 on property:ro.bootmode=charger
