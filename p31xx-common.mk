@@ -35,7 +35,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/init.espresso.usb.rc:root/init.espresso.usb.rc \
     $(LOCAL_PATH)/rootdir/init.espresso.rc:root/init.espresso.rc \
     $(LOCAL_PATH)/rootdir/ueventd.espresso.rc:root/ueventd.espresso.rc \
-    $(LOCAL_PATH)/rootdir/fstab.espresso:root/fstab.espresso
+    $(LOCAL_PATH)/rootdir/fstab.espresso:root/fstab.espresso \
+    $(LOCAL_PATH)/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab \
+    $(LOCAL_PATH)/rootdir/init.recovery.espresso.rc:/root/init.recovery.espresso.rc
 
 # GPS
 PRODUCT_COPY_FILES += \
