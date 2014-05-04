@@ -29,5 +29,7 @@
     <string name="about_version_summary" translatable="false">1.0</string>
     <string name="about_copyright1" translatable="false">Copyright (C) 2015 SlimRoms</string>
     <string name="about_copyright2" translatable="false">2013 CyanogenMod</string>
+    <string name="about_translation_tile">Translate</string>
+    <string name="about_translation_summary">Translate on Crowdin</string>
 
 </resources>
