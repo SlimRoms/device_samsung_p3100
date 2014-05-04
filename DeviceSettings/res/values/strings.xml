@@ -31,5 +31,7 @@
     <string name="about_copyright_title">Copyright:</string>
     <string name="about_copyright1" translatable="false">Copyright \u00A9 SlimRoms 2015</string>
     <string name="about_copyright2" translatable="false">Copyright \u00A9 CyanogenMod 2012</string>
+    <string name="about_translation_tile">Translate</string>
+    <string name="about_translation_summary">Translate on Crowdin</string>
 
 </resources>
