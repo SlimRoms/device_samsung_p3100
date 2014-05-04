@@ -34,10 +34,30 @@
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <TextView
-        android:id="@+id/about_copyright1"
+        android:id="@+id/about_translation_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/about_version_summary"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="@string/about_translation_title"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/about_translation_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_translation_title"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/about_translation_summary"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/about_copyright1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_translation_summary"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
         android:text="@string/about_copyright1"
