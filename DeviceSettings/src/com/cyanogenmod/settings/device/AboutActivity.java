@@ -19,9 +19,12 @@ package com.cyanogenmod.settings.device;
 import android.app.Activity;
 import android.app.Fragment;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.view.*;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
 import com.cyanogenmod.settings.device.R;
 
@@ -41,6 +44,16 @@ public class AboutActivity extends Fragment {
         super.onCreateView(inflater, root, savedInstanceState);
 
         View view = inflater.inflate(R.layout.about_activity, root, false);
+        Button transSumm = (Button) view.findViewById(R.id.about_translation_summary);
+        transSumm.setOnClickListener(new OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent("android.intent.action.VIEW",
+                        Uri.parse("https://crowdin.com/project/slimroms")));
+
+            }
+        });
         return view;
     }
 }
