@@ -33,15 +33,16 @@
 -->
 
 <StorageList xmlns:android="http://schemas.android.com/apk/res/android">
-        <!-- internal emulated storage -->
-    <storage
-            android:storageDescription="@string/storage_internal"
-            android:emulated="true"
-            android:mtpReserve="100" />
+    <!-- internal emulated storage -->
+    <storage android:storageDescription="@string/storage_internal"
+             android:emulated="true"
+             android:mtpReserve="100" />
+
     <storage android:mountPoint="/storage/sdcard1"
              android:storageDescription="@string/storage_sd_card"
              android:primary="false"
-             android:removable="true" />
+             android:removable="true" 
+             android:externalApps="true" />
 
     <storage android:mountPoint="/storage/usbdisk0"
              android:storageDescription="@string/storage_usb"
