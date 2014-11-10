@@ -15,9 +15,7 @@
      limitations under the License.
 -->
 
-<resources xmlns:xliff="urnasis:names:tc:xliff:document:1.2 ">
-
+<resources>
     <!-- Dock Settings -->
     <bool name="has_dock_settings">true</bool>
-
 </resources>
