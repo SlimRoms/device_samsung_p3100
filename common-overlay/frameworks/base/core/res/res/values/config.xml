@@ -218,4 +218,7 @@
 
     <!-- Indicate whether the SD card is accessible without removing the battery. -->
     <bool name="config_batterySdCardAccessibility">true</bool>
+
+     <!-- Wether doze feature is enabled by default in settings. -->
+    <bool name="config_doze_enabled_by_default">false</bool>
 </resources>
