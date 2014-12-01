@@ -22,7 +22,8 @@ $(call inherit-product, vendor/slim/config/gsm.mk)
 PRODUCT_RELEASE_NAME := p3100
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1024
+# TARGET_SCREEN_HEIGHT := 1024
+TARGET_SCREEN_HEIGHT := 480
 TARGET_SCREEN_WIDTH := 600
 
 # Inherit some common Slim stuff.
