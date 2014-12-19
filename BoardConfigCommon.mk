@@ -17,6 +17,8 @@
 # This variable is set first, so it can be overridden
 # by BoardConfigVendor.mk
 
+TARGET_USE_KERNEL_PVR := true
+
 -include device/samsung/omap4-common/BoardConfigCommon.mk
 
 USE_CAMERA_STUB := true
