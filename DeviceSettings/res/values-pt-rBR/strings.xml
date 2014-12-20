@@ -17,7 +17,7 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">Config. Galaxy Tab 2</string>
   <string name="category_dock_title">Dock</string>
-  <string name="dockaudio_subcat_title">Áudio</string>
+  <string name="dockaudio_subcat_title">Áudio do Dock</string>
   <string name="use_dock_audio_title_head">Usar Áudio USB do Dock</string>
-  <string name="use_dock_audio_summary_head">Usar o áudio de saída passivo no dock</string>
+  <string name="use_dock_audio_summary_head">Usar a saída de áudio passiva no dock</string>
 </resources>
