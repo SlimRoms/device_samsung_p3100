@@ -18,6 +18,7 @@
 # by BoardConfigVendor.mk
 
 TARGET_USE_KERNEL_PVR := true
+TARGET_OMAP4430_CPU_OVERCLOCK := true
 
 -include device/samsung/omap4-common/BoardConfigCommon.mk
 
