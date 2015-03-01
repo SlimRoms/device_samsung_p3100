@@ -144,5 +144,8 @@ TW_INCLUDE_CRYPTO := true
 TW_MAX_BRIGHTNESS := 255
 TW_EXCLUDE_MTP := true
 
+BOARD_CUSTOM_BOOTIMG_MK := device/samsung/p3100/custombootimg.mk
+TARGET_NOT_USE_GZIP_RECOVERY : = true
+
 # Use the non-open-source parts, if they're present
 -include vendor/samsung/p31xx/BoardConfigVendor.mk
