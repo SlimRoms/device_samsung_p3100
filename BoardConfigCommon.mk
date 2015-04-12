@@ -129,7 +129,7 @@ TARGET_RECOVERY_FSTAB := device/samsung/p3100/rootdir/fstab.espresso
 RECOVERY_FSTAB_VERSION := 2
 
 # TWRP
-DEVICE_RESOLUTION := 1024x600
+TW_THEME := landscape_mdpi
 HAVE_SELINUX := true
 RECOVERY_SDCARD_ON_DATA := true
 BOARD_HAS_NO_REAL_SDCARD := true
@@ -140,7 +140,7 @@ TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
 TW_NO_REBOOT_BOOTLOADER := true
 TW_HAS_DOWNLOAD_MODE := true
 TW_FLASH_FROM_STORAGE := true
-TW_INCLUDE_JB_CRYPTO := true
+TW_INCLUDE_CRYPTO := true
 TW_MAX_BRIGHTNESS := 255
 
 # Use the non-open-source parts, if they're present
