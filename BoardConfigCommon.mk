@@ -145,7 +145,3 @@ TW_MAX_BRIGHTNESS := 255
 
 # Use the non-open-source parts, if they're present
 -include vendor/samsung/p31xx/BoardConfigVendor.mk
-
-# Bootanimation
-TARGET_SCREEN_HEIGHT := 1024
-TARGET_SCREEN_WIDTH := 600
