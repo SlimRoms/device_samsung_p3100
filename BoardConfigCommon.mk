@@ -131,6 +131,8 @@ BOARD_SUPPRESS_EMMC_WIPE := true
 TARGET_RECOVERY_FSTAB := device/samsung/p3100/rootdir/fstab.espresso
 RECOVERY_FSTAB_VERSION := 2
 
+TARGET_NEEDS_NON_PIE_SUPPORT := true
+
 # TWRP
 TW_THEME := landscape_mdpi
 HAVE_SELINUX := true
