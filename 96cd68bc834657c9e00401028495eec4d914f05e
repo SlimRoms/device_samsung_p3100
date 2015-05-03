@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a202591_edc3c036",
+        "filename": "custombootimg.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1000069
+      },
+      "writtenOn": "2015-05-03T21:22:38Z",
+      "side": 1,
+      "message": "$(INSTALLED_RECOVERYIMAGE_TARGET): $(MKBOOTIMG) \\\n\t\t$(recovery_ramdisk) \\\n\t\t$(recovery_uncompressed_ramdisk) \\\n\t\t$(recovery_kernel)",
+      "revId": "96cd68bc834657c9e00401028495eec4d914f05e",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    }
+  ]
+}
