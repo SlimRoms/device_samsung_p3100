@@ -130,6 +130,8 @@ TARGET_RECOVERY_DEVICE_DIRS += device/samsung/p3100
 BOARD_CUSTOM_BOOTIMG_MK := device/samsung/p3100/custombootimg.mk
 TARGET_NOT_USE_GZIP_RECOVERY_RAMDISK := true
 
+TARGET_NEEDS_NON_PIE_SUPPORT := true
+
 # TWRP
 TW_THEME := landscape_mdpi
 HAVE_SELINUX := true
