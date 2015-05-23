@@ -1,4 +1,13 @@
+LOCAL_PATH := $(call my-dir)
 LZMA_BIN := $(shell which lzma)
+TWRPFSTAB := $(LOCAL_PATH)/rootdir/twrp.fstab
+
+$(recovery_uncompressed_ramdisk): $(MINIGZIP) \
+		$(TARGET_RECOVERY_ROOT_TIMESTAMP)
+	mkdir -p $(TARGET_RECOVERY_ROOT_OUT)/etc
+	cp -f $(TWRPFSTAB) $(TARGET_RECOVERY_ROOT_OUT)/etc/twrp.fstab
+	@echo -e ${CL_CYN}"----- Making uncompressed recovery ramdisk ------"${CL_RST}
+	$(MKBOOTFS) $(TARGET_RECOVERY_ROOT_OUT) > $@
 
 
 $(INSTALLED_RECOVERYIMAGE_TARGET): $(MKBOOTIMG) \
