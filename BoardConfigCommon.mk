@@ -131,7 +131,7 @@ BOARD_SUPPRESS_EMMC_WIPE := true
 TARGET_RECOVERY_FSTAB := device/samsung/p3100/rootdir/fstab.espresso
 RECOVERY_FSTAB_VERSION := 2
 BOARD_CUSTOM_BOOTIMG_MK := device/samsung/p3100/custombootimg.mk
-TARGET_NOT_USE_GZIP_RECOVERY : = true
+TARGET_NOT_USE_GZIP_RECOVERY_RAMDISK := true
 
 # TWRP
 TW_THEME := landscape_mdpi
