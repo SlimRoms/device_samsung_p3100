@@ -35,28 +35,25 @@ public class DeviceSettings extends FragmentActivity {
 
     public static final String SHARED_PREFERENCES_BASENAME = "com.cyanogenmod.settings.device";
     public static final String ACTION_UPDATE_PREFERENCES = "com.cyanogenmod.settings.device.UPDATE";
-    public static final String KEY_USE_DOCK_AUDIO = "dock_audio";
-
-    ViewPager mViewPager;
-    TabsAdapter mTabsAdapter;
+    public static final String LOGTAG = "DeviceSettings";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        mViewPager = new ViewPager(this);
-        mViewPager.setId(R.id.viewPager);
-        setContentView(mViewPager);
+        ViewPager viewPager = new ViewPager(this);
+        viewPager.setId(R.id.viewPager);
+        setContentView(viewPager);
 
         final ActionBar bar = getActionBar();
         bar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
         bar.setDisplayOptions(ActionBar.DISPLAY_SHOW_TITLE, ActionBar.DISPLAY_SHOW_TITLE);
         bar.setTitle(R.string.app_name);
 
-        mTabsAdapter = new TabsAdapter(this, mViewPager);
-        mTabsAdapter.addTab(bar.newTab().setText(R.string.category_dock_title),
-                DockFragmentActivity.class, null);
-        mTabsAdapter.addTab(bar.newTab().setText(R.string.about_action),
+        TabsAdapter tabsAdapter = new TabsAdapter(this, viewPager);
+        tabsAdapter.addTab(bar.newTab().setText(R.string.category_audio_title),
+                AudioFragment.class, null);
+        tabsAdapter.addTab(bar.newTab().setText(R.string.about_action),
                 AboutFragment.class, null);
 
         if (savedInstanceState != null) {
@@ -75,7 +72,7 @@ public class DeviceSettings extends FragmentActivity {
         private final Context mContext;
         private final ActionBar mActionBar;
         private final ViewPager mViewPager;
-        private final ArrayList<TabInfo> mTabs = new ArrayList<TabInfo>();
+        private final ArrayList<TabInfo> mTabs = new ArrayList<>();
 
         static final class TabInfo {
             private final Class<?> clss;
@@ -116,16 +113,20 @@ public class DeviceSettings extends FragmentActivity {
             return Fragment.instantiate(mContext, info.clss.getName(), info.args);
         }
 
+        @Override
         public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
         }
 
+        @Override
         public void onPageSelected(int position) {
             mActionBar.setSelectedNavigationItem(position);
         }
 
+        @Override
         public void onPageScrollStateChanged(int state) {
         }
 
+        @Override
         public void onTabSelected(Tab tab, FragmentTransaction ft) {
             Object tag = tab.getTag();
             for (int i=0; i<mTabs.size(); i++) {
@@ -135,9 +136,11 @@ public class DeviceSettings extends FragmentActivity {
             }
         }
 
+        @Override
         public void onTabUnselected(Tab tab, FragmentTransaction ft) {
         }
 
+        @Override
         public void onTabReselected(Tab tab, FragmentTransaction ft) {
         }
     }
