@@ -95,7 +95,7 @@ void *orientationd_thread(void *thread_data)
 	struct orientationd_data *data;
 	struct input_event event;
 	struct timeval time;
-	long int before, after;
+	int64_t before, after;
 	int diff;
 	int input_fd;
 	int rc;
