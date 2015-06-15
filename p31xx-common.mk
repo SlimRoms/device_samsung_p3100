@@ -88,6 +88,12 @@ PRODUCT_PACKAGES += \
     libinvensense_mpl \
     power.piranha
 
+# Sensors
+PRODUCT_PACKAGES += \
+    sensors.piranha \
+    geomagneticd \
+    orientationd
+
 # Storage
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.isUsbOtgEnabled=true
