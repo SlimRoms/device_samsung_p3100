@@ -32,14 +32,17 @@ PRODUCT_AAPT_CONFIG := large
 PRODUCT_AAPT_PREF_CONFIG := mdpi
 PRODUCT_LOCALES += mdpi
 
-# Init files
+# Ramdisk
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/init.espresso.usb.rc:root/init.espresso.usb.rc \
-    $(LOCAL_PATH)/rootdir/init.espresso.rc:root/init.espresso.rc \
-    $(LOCAL_PATH)/rootdir/ueventd.espresso.rc:root/ueventd.espresso.rc \
-    $(LOCAL_PATH)/rootdir/fstab.espresso:root/fstab.espresso \
-    $(LOCAL_PATH)/recovery/root/etc/twrp.fstab:recovery/root/etc/twrp.fstab \
-    $(LOCAL_PATH)/rootdir/init.recovery.espresso.rc:/root/init.recovery.espresso.rc
+    init.espresso.usb.rc \
+    init.espresso.rc \
+    ueventd.espresso.rc \
+    fstab.espresso
+
+# Recovery Ramdisk
+PRODUCT_COPY_FILES += \
+    twrp.fstab \
+    init.recovery.espresso.rc
 
 # GPS
 PRODUCT_COPY_FILES += \
