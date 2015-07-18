@@ -104,22 +104,18 @@ BOARD_USE_LEGACY_SENSORS_FUSION := false
 BOARD_USES_SECURE_SERVICES := true
 
 # Selinux
-BOARD_SEPOLICY_DIRS := \
-    device/samsung/p3100/selinux
+BOARD_SEPOLICY_DIRS += \
+    device/samsung/p3100/sepolicy
 
-BOARD_SEPOLICY_UNION := \
-    file_contexts \
-    file.te \
+BOARD_SEPOLICY_UNION += \
     device.te \
     dock_kbd_attach.te \
-    domain.te \
+    file.te \
+    file_contexts \
     geomagneticd.te \
-    init.te \
     orientationd.te \
-    pvrsrvinit.te \
-    rild.te \
-    smc_pa.te \
-    wpa_supplicant.te
+    gpsd.te \
+    smc_pa.te
 
 # Recovery
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
