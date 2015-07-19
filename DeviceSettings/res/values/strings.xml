@@ -21,4 +21,15 @@
     <string name="dockaudio_subcat_title">Dock Audio</string>
     <string name="use_dock_audio_title_head">Use Dock USB Audio</string>
     <string name="use_dock_audio_summary_head">Use the passive audio out on the dock</string>
+
+    <!-- About -->
+    <string name="action_about">About</string>
+    <string name="about_title">Samsung Galaxy Tab 2 Settings</string>
+    <string name="about_version_title">Version Number</string>
+    <string name="about_version_summary" translatable="false">1.0</string>
+    <string name="about_copyright1" translatable="false">Copyright (C) 2015 SlimRoms</string>
+    <string name="about_copyright2" translatable="false">2013 Cyanogenmod</string>
+    <string name="about_translation_tile">Translate</string>
+    <string name="about_translation_summary" translatable="false">Crowdin Translators</string>
+
 </resources>
