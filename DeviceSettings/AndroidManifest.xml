@@ -25,5 +25,7 @@
             </intent-filter>
         </receiver>
 
+        <activity android:name="com.cyanogenmod.settings.device.fragments.DockFragmentActivity" />
+
     </application>
 </manifest>
