@@ -25,5 +25,8 @@
             </intent-filter>
         </receiver>
 
+        <activity android:name="com.cyanogenmod.settings.device.AboutActivity"
+                  android:parentActivityName="com.cyanogenmod.settings.device.DeviceSettings" />
+
     </application>
 </manifest>
