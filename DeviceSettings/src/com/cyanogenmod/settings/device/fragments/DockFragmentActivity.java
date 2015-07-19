@@ -15,7 +15,7 @@
 * limitations under the License.
 */
 
-package com.cyanogenmod.settings.device;
+package com.cyanogenmod.settings.device.fragments;
 
 import android.app.ActivityManagerNative;
 import android.content.Context;
@@ -31,12 +31,14 @@ import android.preference.PreferenceScreen;
 import android.preference.SwitchPreference;
 import android.util.Log;
 
+import com.cyanogenmod.settings.device.DeviceSettings;
 import com.cyanogenmod.settings.device.R;
+import com.cyanogenmod.settings.device.Utils;
 
 public class DockFragmentActivity extends PreferenceFragment {
 
     private static final String PREF_ENABLED = "1";
-    private static final String TAG = "GalaxyTab2Settings_General";
+    private static final String TAG = "GalaxyTab2Settings_Dock";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
