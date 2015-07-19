@@ -28,6 +28,9 @@
         <activity android:name=".HapticFragmentActivity" />
         <activity android:name=".RadioFragmentActivity" />
         <activity android:name=".ScreenFragmentActivity" />
+      
+		<activity android:name="com.cyanogenmod.settings.device.AboutActivity"
+		    android:parentActivityName="com.cyanogenmod.settings.device.DeviceSettings" />
 
     </application>
 </manifest>
