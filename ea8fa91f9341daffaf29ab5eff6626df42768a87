@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a5c5d37_2dab198b",
+        "filename": "DeviceSettings/src/com/cyanogenmod/settings/device/AboutActivity.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1000011
+      },
+      "writtenOn": "2015-07-19T20:08:39Z",
+      "side": 1,
+      "message": "Try :\n\nimport com.android.settings.R;\n\nCheck to be sure these strings are actually defined.",
+      "range": {
+        "startLine": 31,
+        "startChar": 0,
+        "endLine": 31,
+        "endChar": 41
+      },
+      "revId": "ea8fa91f9341daffaf29ab5eff6626df42768a87",
+      "serverId": "f8201d64-d729-4630-b91d-5f8be02869f0",
+      "unresolved": false
+    }
+  ]
+}
