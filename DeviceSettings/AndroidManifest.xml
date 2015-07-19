@@ -6,14 +6,15 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
 
-    <application android:label="@string/app_name">
+    <application android:label="@string/app_name"
+            android:icon="@drawable/ic_launcher_devicesettings" >
         <activity
             android:name="com.cyanogenmod.settings.device.DeviceSettings"
-            android:icon="@drawable/ic_launcher_devicesettings"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="com.cyanogenmod.action.LAUNCH_DEVICE_SETTINGS" />
                 <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
