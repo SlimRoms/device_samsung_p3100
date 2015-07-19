@@ -17,7 +17,7 @@
     <PreferenceCategory
                 android:title="@string/dockaudio_subcat_title">
     <!-- Use Dock Audio -->
-    <CheckBoxPreference
+    <SwitchPreference
                 android:key="dock_audio"
                 android:title="@string/use_dock_audio_title_head"
                 android:summary="@string/use_dock_audio_summary_head"
