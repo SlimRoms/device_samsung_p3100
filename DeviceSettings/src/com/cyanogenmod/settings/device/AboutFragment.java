@@ -43,7 +43,7 @@ public class AboutFragment extends Fragment {
             Bundle savedInstanceState) {
         super.onCreateView(inflater, root, savedInstanceState);
 
-        View view = inflater.inflate(R.layout.about_activity, root, false);
+        View view = inflater.inflate(R.layout.about_fragment, root, false);
         Button transSumm = (Button) view.findViewById(R.id.about_translation_summary);
         transSumm.setOnClickListener(new OnClickListener() {
 
