@@ -24,9 +24,6 @@
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/p3100/bluetooth
 BOARD_BLUEDROID_VENDOR_CONF := device/samsung/p3100/bluetooth/vnd_espresso.txt
 
-# Recovery
-TARGET_RECOVERY_DEVICE_DIRS += device/samsung/p3100
-
 # TWRP
 TW_THEME := landscape_mdpi
 
