@@ -15,6 +15,9 @@
 # limitations under the License.
 #
 
+# use 44.1 kHz sounds
+TARGET_NEED_44KHZ_SOUNDS := true
+
 ## Specify phone tech before including full_phone
 $(call inherit-product, vendor/slim/config/gsm.mk)
 
